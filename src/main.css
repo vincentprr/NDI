@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.illus{
+    @apply h-[100vh] absolute top-0 w-full;
+    background: url(../img/sis_background.png) no-repeat bottom/100vw fixed;
+}
+
+.container{
+    @apply w-[80%] drop-shadow-clean-xl min-h-[70vh] bg-white m-auto relative top-28 rounded-md p-4;
+}

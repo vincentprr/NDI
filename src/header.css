@@ -1,0 +1,18 @@
+.header-navigation-item{
+    @apply px-5 py-4 text-center relative no-underline;
+}
+
+.middle-header-navigation-item{
+    @apply header-navigation-item;
+
+    &:after{
+        content: "";
+        @apply bottom-2 right-0 w-0 absolute h-[1px] bg-gray-800 transition-[width] duration-300;
+    }
+
+    &:hover{
+        &:after{
+            @apply w-full left-0;
+        }
+    }
+}
