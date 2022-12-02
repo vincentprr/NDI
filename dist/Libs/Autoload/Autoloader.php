@@ -23,6 +23,6 @@ function autoload(string $className) : void{
             break;
         }
     }
-    echo $className;
+    
     require_once "$result.php";
 }
